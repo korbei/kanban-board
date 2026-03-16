@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Nord Polar Night */
+  --color-nord0: #2E3440;
+  --color-nord1: #3B4252;
+  --color-nord2: #434C5E;
+  --color-nord3: #4C566A;
+
+  /* Nord Snow Storm */
+  --color-nord4: #D8DEE9;
+  --color-nord5: #E5E9F0;
+  --color-nord6: #ECEFF4;
+
+  /* Nord Frost */
+  --color-nord7: #8FBCBB;
+  --color-nord8: #88C0D0;
+  --color-nord9: #81A1C1;
+  --color-nord10: #5E81AC;
+
+  /* Nord Aurora */
+  --color-nord11: #BF616A;
+  --color-nord12: #D08770;
+  --color-nord13: #EBCB8B;
+  --color-nord14: #A3BE8C;
+  --color-nord15: #B48EAD;
+}
+
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 110%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme (default) */
+body {
+  background-color: var(--color-nord6);
+  color: var(--color-nord0);
+}
+
+/* Dark theme */
+.dark body,
+.dark {
+  background-color: var(--color-nord0);
+  color: var(--color-nord4);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-nord3);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-nord3);
+}
+
+/* Dialog backdrop */
+.dialog-backdrop {
+  background-color: rgba(46, 52, 64, 0.6);
+  backdrop-filter: blur(4px);
+}

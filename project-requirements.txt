@@ -1,0 +1,27 @@
+Simple Kanban Board Project
+
+Requirements:
+  Frontend:
+    Technology stack:
+    	Use latest React
+    	Use tailwind css
+    Design:
+        Light and Dark theme
+            Use nord color palette. https://www.nordtheme.com/docs/colors-and-palettes.
+        Projects View:
+            Add new Project by dialog.
+            Each Project has Title, Description, Status, StartDate, EndDate field. 
+            There is a file upload feature to attach multiple file to a project sach as "Project specification", "UML diagrams" and so on. 
+            Display projects as a grid of cards.
+            On the Project card display a progressbar to show how many tasks are finished.
+            Clicking on a Project card navigate to the task view.
+        Tasks View:
+            There are 3 columns New, InProgress, Done.
+            Drag and drop support.
+            Add new Task by dialog. The New Task Button should be on the top of the New column. Use icon button. 
+            Each Task has Title, Description, Status, StartDate, EndDate field.
+  Backend:
+    Technology stack:
+        Ktolin/ktor. To manage all Ktor dependencies use the officially published version catalog. (io.ktor:ktor-version-catalog:3.4.1)
+        Exposed ORM framework. (latest version) 
+        

@@ -1,0 +1,26 @@
+# Backend
+backend/build/
+backend/.gradle/
+backend/data/
+backend/uploads/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+kanban-data/
+kanban-uploads/
+
+# Env
+.env
+.env.*

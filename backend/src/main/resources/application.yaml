@@ -1,0 +1,13 @@
+ktor:
+  application:
+    modules:
+      - com.kanban.ApplicationKt.module
+  deployment:
+    port: 8080
+    host: 0.0.0.0
+
+database:
+  url: "jdbc:h2:file:./data/kanban;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE"
+  driver: "org.h2.Driver"
+  user: "sa"
+  password: ""
